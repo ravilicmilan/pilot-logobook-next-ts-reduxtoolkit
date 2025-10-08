@@ -64,12 +64,12 @@ export function findRecordsByQuery(
   if (!query || query.length === 0) {
     return data; // Return all data if no query is specified
   }
-  console.log('STA IMA DATA????', data, query);
+
   const filteredData = data.filter((item) => {
     // Check if every search parameter is satisfied for the current item
     return query.every((searchParam) => {
       // Safely cast the label to a key of LogbookType
-      console.log('SEARCH PARAM??????', searchParam);
+
       const key = searchParam.label as keyof LogbookType;
       const itemValue = item[key];
 
@@ -105,7 +105,7 @@ export function findRecordsByQuery(
             const searchValArr = searchParam.value
               .split(/[,;]/)
               .map((item) => item.trim());
-            console.log('SeARCH ARRRAY???', searchValArr);
+
             const [min, max] = searchValArr;
             return itemValue >= min && itemValue <= max;
         }
@@ -115,7 +115,7 @@ export function findRecordsByQuery(
       return itemValue === searchParam.value;
     });
   });
-  console.log('FILTERED DATA??', filteredData);
+
   return filteredData.length > 0 ? filteredData : null;
 }
 
