@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
-
-export default function IndexPage() {
-  return <Counter />;
-}
+import Header from "@/components/UI/Header/Header";
+import Home from "@/components/Home/Home";
 
 export const metadata: Metadata = {
-  title: "Redux Toolkit",
+  title: "Pilot logbook",
 };
+
+export default async function IndexPage() {
+  return (
+    <div>
+      <Header />
+      <Home />
+    </div>
+  );
+}

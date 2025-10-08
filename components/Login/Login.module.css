@@ -1,0 +1,13 @@
+.Login {
+  width: 350px;
+  height: auto;
+  margin: 30px auto;
+  border: 1px solid var(--main-button-color);
+  padding: 10px;
+}
+.Login input,
+.Login label {
+  width: 100%;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}

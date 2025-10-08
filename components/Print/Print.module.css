@@ -1,0 +1,25 @@
+.Print {
+  height: auto;
+  z-index: 6;
+  background-color: var(--primary-background);
+  min-width: 90vw;
+  justify-content: flex-start;
+  height: 90%;
+}
+.PrintHeader {
+  color: var(--primary-text-color);
+  margin: 20px auto;
+}
+.PrintSubHeader {
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
+}
+.CheckboxWrapper {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 100%;
+}
+.ButtonsWrapper {
+  margin: 20px auto;
+}

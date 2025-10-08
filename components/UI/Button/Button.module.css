@@ -1,0 +1,44 @@
+.Button {
+  min-width: 100px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.Button:hover {
+  background-color: var(--main-button-color-hover);
+}
+
+.Primary {
+  background-color: var(--main-button-color);
+  color: var(--secondary-text-color);
+}
+.Primary:hover {
+  background-color: var(--main-button-color-hover);
+}
+.Small {
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  min-width: 30px;
+  height: 30px;
+}
+.Close {
+  background-color: var(--close-action-color);
+  color: var(--secondary-text-color);
+}
+.Close:hover {
+  background-color: var(--closse-action-color-hover);
+}
+.Success {
+  background-color: var(--success-action-color);
+  color: var(--secondary-text-color);
+}
+.Success:hover {
+  background-color: var(--success-action-color-hover);
+}
+.Disabled {
+  background-color: var(--main-button-color-hover);
+  cursor: auto;
+}

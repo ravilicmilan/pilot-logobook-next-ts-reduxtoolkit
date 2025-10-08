@@ -1,0 +1,56 @@
+.Form {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  background-color: var(--primary-background);
+  overflow-y: auto;
+  height: auto;
+  padding: 10px;
+}
+.FromHeader {
+  width: 100%;
+  height: 40px;
+  background-color: var(--main-button-color);
+  color: var(--secondary-text-color);
+  font-size: 20px;
+}
+.FormButtonsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.FormWrapper {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.FormRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--main-button-color);
+}
+.FormRow select,
+.FormRow input {
+  width: 50%;
+}
+.Form input {
+  font-size: 14px;
+}
+.FormRow label {
+  font-size: 14px;
+  width: 48%;
+}
+.FormRow textarea {
+  width: 50%;
+  height: 70px;
+}
+.Last {
+  height: 70px !important;
+}

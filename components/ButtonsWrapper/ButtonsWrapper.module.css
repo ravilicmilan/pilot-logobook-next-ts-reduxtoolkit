@@ -1,0 +1,7 @@
+.ButtonsWrapper {
+  width: 100%;
+  height: 50px;
+  background-color: var(--secondary-background);
+  gap: 20px;
+  margin: 20px auto;
+}

@@ -1,0 +1,34 @@
+.Modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: auto;
+  padding: 0 10px;
+}
+.ModalBackdrop {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ModalOuter {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ModalInner {
+  margin: 50px auto;
+  height: auto;
+  max-height: 100%;
+  overflow-y: auto;
+}

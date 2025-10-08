@@ -1,0 +1,80 @@
+.TableWrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+.Table {
+  font-size: 10px;
+  text-align: center;
+  border: 1px inset var(--primary-text-color);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.Table th,
+.Table td {
+  min-width: 60px;
+  min-height: 34px;
+  font-size: 11px;
+}
+.Table tr,
+.Table td {
+  border: 1px inset var(--primary-text-color);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.Table th {
+  background-color: var(--table-header-background);
+  color: var(--secondary-text-color);
+  font-weight: normal;
+  border: 1px inset var(--secondary-text-color);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.Table tr {
+  height: 30px;
+}
+.Table tr:nth-child(odd) {
+  background-color: var(--odd-td-color);
+}
+.Table tr:nth-child(even) {
+  background-color: var(--even-td-color);
+}
+.td_aircraft_model,
+.td_pic_name,
+.td_remarks {
+  min-width: 120px !important;
+}
+.td_route {
+  min-width: 150px !important;
+}
+.td_date {
+  min-width: 65px !important;
+}
+.SubTotal {
+  background-color: var(--subtotal-color);
+}
+.Total {
+  background-color: var(--total-color);
+}
+.SubTotal,
+.Total {
+  font-weight: bold;
+  font-size: 12px !important;
+}
+
+.TableRow:hover {
+  cursor: pointer;
+  background-color: var(--table-row-hover) !important;
+}
+.EditBtn {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  vertical-align: middle;
+}
+.Selected {
+  background-color: var(--table-row-selected) !important;
+}

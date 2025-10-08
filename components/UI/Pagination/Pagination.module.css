@@ -1,0 +1,9 @@
+.PaginationWrapper {
+  justify-content: space-around;
+  width: 220px;
+  margin: 30px auto;
+}
+.PageNumber {
+  border: 1px solid var(--table-header-background);
+  background-color: var(--secondary-background);
+}
