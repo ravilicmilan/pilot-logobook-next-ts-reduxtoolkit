@@ -11,7 +11,7 @@ export async function loginUser(
 ): Promise<LoginResponse> {
   // 1. Find user in database
   const user = await findUser(email);
-  // console.log('STA JE NASO????', { email, password }, user);
+
   if (!user) {
     return { success: false, message: 'User not found!' };
   }

@@ -37,7 +37,6 @@ export const getAllLogs = async (): Promise<LogbookRow[] | boolean> => {
     return false;
   }
 
-  console.log('JEL IMA SESSION???', session);
   const { data, error } = await supabase
     .from('logbook')
     .select('*')

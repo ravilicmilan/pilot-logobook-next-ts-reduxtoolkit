@@ -8,7 +8,6 @@ export const logbookSlice = createSlice({
   initialState,
   reducers: {
     saveLogbook: (state, action: PayloadAction<LogbookType[]>) => {
-      console.log('REDUCDER?????', action);
       return action.payload;
     },
   },

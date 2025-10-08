@@ -97,7 +97,11 @@ export function calculateTime(
   return `${totalHours <= 9 ? '0' + totalHours : totalHours}:${restOfMinutes <= 9 ? '0' + restOfMinutes : restOfMinutes}`;
 }
 
-export function compareDates(date1: string, date2: string, operator: string) {
+export function compareDates(
+  date1: string,
+  date2: string,
+  operator: string
+): boolean | undefined {
   const d1 = new Date(date1);
   const d2 = new Date(date2);
   const time1 = d1.getTime();
@@ -114,16 +118,20 @@ export function compareDates(date1: string, date2: string, operator: string) {
   }
 }
 
-export function isDateInRange(date: string, min: string, max: string) {
+export function isDateInRange(
+  date: string,
+  min: string,
+  max: string
+): boolean | undefined {
   return compareDates(date, min, '>=') && compareDates(date, max, '<=');
 }
 
-export function formatDate(date: Date) {
+export function formatDate(date: Date): string {
   let formattedDate = new Date(date);
   return formattedDate.toISOString().split('T')[0];
 }
 
-export function getLogbookFromStorage() {
+export function getLogbookFromStorage(): LogbookType[] | boolean | undefined {
   'use client';
   if (typeof window !== 'undefined') {
     const data = window.localStorage.getItem('logbook');
@@ -186,7 +194,6 @@ export function removeSeconds(time: string): string {
 }
 
 export function stripSecondsFromTime(data: LogbookType[]): LogbookType[] {
-  console.log('STRIP SECONDS !!!!!!');
   const timeKeys: Array<keyof LogbookType> = [
     'departure_time',
     'destination_time',
